@@ -1,3 +1,15 @@
 #+TITLE: Readme
 
-Stub for utility that decodes Gravity pulse transactions
+Stub for utility that decodes Gravity pulse transactions.
+
+* Guide
+Get a base64 transaction string with [[https://docs.tendermint.com/master/rpc/][tenderming rpc]] request like
+https://{gravity_node_ip}/block?height={block_height}
+
+#+begin_src sh
+go build
+./gravity-tx-decoder
+#+end_src
+
+* gtd
+ - [ ] Support all transactions from gravity-core/common/transactions
